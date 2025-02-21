@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   ],
   icons: "/favicon.png",
   openGraph: {
-    title: "Blog | Curiosidade sem limites",
+    title: "ChatBot DeepSarcastic",
     images: [`${process.env.NEXT_PUBLIC_URL}/logo.png`],
   },
   robots: {
