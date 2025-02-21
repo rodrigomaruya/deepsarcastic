@@ -35,7 +35,7 @@ export default async function ChatBot() {
   }
   return (
     <main>
-      <HomeChat />
+      <HomeChat user={session.user.name} />
     </main>
   );
 }

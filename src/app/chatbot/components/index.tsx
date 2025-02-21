@@ -8,7 +8,11 @@ interface Mensagem {
   texto: string;
 }
 
-export default function HomeChat() {
+interface UserProp {
+  user: string;
+}
+
+export default function HomeChat({ user }: UserProp) {
   const [mensagem, setMensagem] = useState("");
   const [respostas, setRespostas] = useState<Mensagem[]>([]);
   const [carregando, setCarregando] = useState(false);
@@ -65,7 +69,7 @@ export default function HomeChat() {
           type="text"
           value={mensagem}
           onChange={(e) => setMensagem(e.target.value)}
-          placeholder="Pergunte algo..."
+          placeholder={`Pergunte logo ${user}`}
           className="flex-1 border p-2 rounded-l-md"
         />
         <button
