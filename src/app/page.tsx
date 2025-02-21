@@ -17,6 +17,9 @@ export default function Home() {
         <h1 className="text-3xl md:text-5xl font-bold mb-5">
           Deep<span className="text-red-800">Sarcastic</span>
         </h1>
+        <p className="mb-4 font-semibold text-zinc-500">
+          IA mais sarcástica do momento!
+        </p>
         <ButtonLogin />
       </div>
       <div className="flex items-center justify-center mt-16 px-3">
